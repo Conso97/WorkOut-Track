@@ -12,7 +12,7 @@ const API = {
   },
   async addExercise(data) {
     alert("location "+location);
-    alert("data "+data);
+    // alert("data "+data);
     const id = location.search.split("=")[1];
 
     const res = await fetch("/api/workouts/" + id, {
