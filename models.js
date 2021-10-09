@@ -9,14 +9,14 @@ const WorkoutSchema = Schema({
     exercises:  [
         {
             // required fields
-            type: String,
-            name: String,
-            duration: Number,
+            type: {type: String},
+            name: {type: String},
+            duration: {type: Number},
             // optional fields
-            weight: Number,
-            reps: Number,
-            sets: Number,
-            distance: Number
+            weight: {type: Number},
+            reps: {type: Number},
+            sets: {type: Number},
+            distance: {type: Number}
         }
     ]
 }, {toJSON: {virtuals: true}});
