@@ -33,6 +33,11 @@ In this activity I learnt:
     alt="Fitness Tracker"
   />
 
+<img id="styledImage"
+    src="public/FitnessChart.jpg" width="70%" height="70%"
+    alt="Fitness Tracker"
+  />
+
 # Contact 
 
 * Name: Consolata Njeri
