@@ -38,13 +38,13 @@ router.put('/:id', (req, res) => {
 });
 
 router.post('/:id', (req, res) => {
-    console.log("here");
     console.log(req);
 
 });
 
 router.get('/range', (req, res) => {
-    Workout.find().sort({ _id: -1 }).limit(7).exec(function(err, results) {
+    Workout.find().sort({ _id: -1 }).limit(7).sort({_id: "ascending"}).exec(function(err, results) {
+        console.log(JSON.stringify(results));
         return res.json(results);
     });
 });
