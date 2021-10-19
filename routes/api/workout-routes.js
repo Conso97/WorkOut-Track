@@ -14,10 +14,10 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     console.log("post " + req)
     Workout.create(req.body, function(err, result) {
-        if(err){
+        if(err) {
         	console.log(err);
         	return res.send(err);
-         }
+        }
         return res.json(result);
     })
 });
